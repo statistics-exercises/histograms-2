@@ -19,6 +19,8 @@ for i in range(2) :
 # This will draw a bar chart showing the fraction of successes and 
 # the fraction of failures.
 plt.bar( [0,1], counts, width=0.1 )
+plt.xlabel("Outcome")
+plt.ylabel("Probability")
 plt.savefig('bernoulli_histogram.png')
   
   

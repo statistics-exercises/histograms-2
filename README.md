@@ -10,10 +10,10 @@ To complete the exercise you must do the following:
 
 Notice that when you are counting the number of successes and failures in the elements of the list called counts you do not need to use an if statement.  Instead, you can do the following:
 
-````
+```python
 myvar = bernoulli(p)
 counts[int(myvar)] = counts[int(myvar)] + 1
-````
+```
 
 This works because if the trial was unsuccessful the function `bernoulli` returns a 0.  Consequently, the code above will modify element 0 of the list.  By contrast, if the trial is successful `bernoulli` returns a 1 and the above code will modify element 1 of the list.  
 If you complete the exercise correctly an estimate of the probability mass function will be generated in the file `bernoulli_histogram.png`.
